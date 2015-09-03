@@ -1,0 +1,18 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+    <div class="list card">
+      <div class="item item-divider">รายการ</div>
+      <a class="item item-icon-left" href="http://www.dhsthailand.org"  ng-repeat="(index,l) in list"  >
+      <i class="{{ l.icon }}" ></i>
+      {{ l.id }}. {{ l.desc }}
+      <span class="badge badge-positive">{{ l.price|number:2  }}</span>
+        </a>
+      </div>
+    <div class="list card">
+      <div class="item item-divider">Name Email</div>
+      <a class="item item-icon-left" href="http://www.dhsthailand.org"  ng-repeat="u in users"  >
+        {{ u.firstname}} | {{ u.email}}
+      </a>
+    </div>
+  </ion-content>
+</ion-view>
